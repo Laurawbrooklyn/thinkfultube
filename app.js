@@ -14,10 +14,10 @@ function search(query) {
 	$.getJSON(url, function(results) {
 		$(".js-videos").html('')
 		for (var i = 0; i < results.items.length; i++) {	
-			$(".js-videos").append("<h1>" + results.items[i].snippet.title + "</h1>")
-			console.log("<h1>" + results.items[i].snippet.title + "</h1>")
+			$(".js-videos").append("<h3>" + results.items[i].snippet.title + "</h3>")
+			console.log("<h3>" + results.items[i].snippet.title + "</h3>")
 			var videoUrl = 'https://www.youtube.com/watch?v=' + results.items[i].id.videoId			
-			$(".js-videos").append("<a href='" + videoUrl + "'>Watch Me</a>")
+			$(".js-videos").append("<a href='" + videoUrl + "'><br>Watch Me</br></a>")
 			$(".js-videos").append("<img src='" + results.items[i].snippet.thumbnails.medium.url + "'> ")
 		}
 	})

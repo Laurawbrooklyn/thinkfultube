@@ -1,3 +1,35 @@
 body {
-  padding-top: 50px;
+	text-align: center;
+  	padding: 100px;
+  	font-family: Roboto;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+form {
+    width: 500px;
+    margin: 50px auto;
+}
+
+input {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border: 0px solid #dbdbdb;
+    border-radius: 2px;
+
+}
+button {
+    position: relative;
+    padding: 6px 15px;
+    left: -8px;
+    border: 2px solid red;
+    border-radius: 2px;
+    background-color: red;
+    color: #fafafa;
 }
