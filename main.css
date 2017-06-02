@@ -22,8 +22,12 @@ input {
     background:rgba(50, 50, 50, 0.2);
     border: 0px solid #dbdbdb;
     border-radius: 2px;
-
 }
+
+label {
+	display: block;
+}
+
 button {
     position: relative;
     padding: 6px 15px;
